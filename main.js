@@ -1,29 +1,51 @@
-// Mobile menu toggle
-document.querySelector('.hamburger').addEventListener('click', function() {
-    document.querySelector('nav ul').classList.toggle('active');
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+// Mobile Navigation Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav a');
+    
+    // Toggle mobile menu
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+    });
+    
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                nav.classList.remove('active');
+                hamburger.textContent = '☰';
+            }
         });
-        
-        // Close mobile menu if open
-        if (window.innerWidth <= 768) {
-            document.querySelector('nav ul').classList.remove('active');
+    });
+    
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+            header.style.background = 'white';
         }
     });
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function() {
-        if (window.innerWidth <= 768) {
-            document.querySelector('nav ul').classList.remove('active');
-        }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId !== '#') {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
 });
