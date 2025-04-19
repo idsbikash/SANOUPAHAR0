@@ -1,16 +1,15 @@
-// WhatsApp button functionality
+// WhatsApp button animation
 document.addEventListener('DOMContentLoaded', function() {
-    const whatsappButton = document.querySelector('.whatsapp-button');
+    const whatsappBtn = document.querySelector('.whatsapp-button');
     
-    // Create tooltip
-    const tooltip = document.createElement('div');
-    tooltip.className = 'whatsapp-tooltip';
-    tooltip.textContent = 'Chat with me on WhatsApp';
-    whatsappButton.appendChild(tooltip);
+    // Add pulse animation on page load
+    setTimeout(() => {
+        whatsappBtn.style.animation = 'pulse 2s infinite';
+    }, 2000);
     
-    // Add click event to open WhatsApp
-    whatsappButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.open(this.querySelector('a').href, '_blank');
+    // Click event for analytics (optional)
+    whatsappBtn.addEventListener('click', function() {
+        // You can add analytics tracking here
+        console.log('WhatsApp button clicked');
     });
 });
