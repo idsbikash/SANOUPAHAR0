@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Services</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="business.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-img">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Business Services</h1>
+                        <p>Premium digital products</p>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-to-order">How to Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Business Services Section -->
+    <section id="business" class="business-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p class="subtitle">Premium digital products with instant delivery</p>
+            </div>
+            
+            <div class="services-grid" id="services">
+                <!-- FreeFire Diamonds -->
+                <div class="service-card">
+                    <div class="service-img" style="background: linear-gradient(45deg, #FF416C, #FF4B2B);">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>FreeFire Diamonds</h3>
+                        <p>Get FreeFire diamonds at competitive prices with instant delivery.</p>
+                        <div class="pricing">
+                            <h4>Packages:</h4>
+                            <ul>
+                                <li data-price="2.99">100 Diamonds - $2.99</li>
+                                <li data-price="12.99">500 Diamonds - $12.99</li>
+                                <li data-price="24.99">1000 Diamonds - $24.99</li>
+                                <li data-price="44.99">2000 Diamonds - $44.99</li>
+                            </ul>
+                        </div>
+                        <button class="btn order-btn" data-service="FreeFire Diamonds">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Netflix Accounts -->
+                <div class="service-card">
+                    <div class="service-img" style="background: linear-gradient(45deg, #E50914, #B00710);">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Netflix Accounts</h3>
+                        <p>Premium Netflix accounts with long-term validity at affordable prices.</p>
+                        <div class="pricing">
+                            <h4>Packages:</h4>
+                            <ul>
+                                <li data-price="8.99">1 Month - $8.99</li>
+                                <li data-price="24.99">3 Months - $24.99</li>
+                                <li data-price="44.99">6 Months - $44.99</li>
+                                <li data-price="79.99">1 Year - $79.99</li>
+                            </ul>
+                        </div>
+                        <button class="btn order-btn" data-service="Netflix Accounts">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- YouTube Premium -->
+                <div class="service-card">
+                    <div class="service-img" style="background: linear-gradient(45deg, #FF0000, #CC0000);">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>YouTube Premium</h3>
+                        <p>Enjoy ad-free YouTube with background play and YouTube Music.</p>
+                        <div class="pricing">
+                            <h4>Packages:</h4>
+                            <ul>
+                                <li data-price="6.99">1 Month - $6.99</li>
+                                <li data-price="18.99">3 Months - $18.99</li>
+                                <li data-price="34.99">6 Months - $34.99</li>
+                                <li data-price="59.99">1 Year - $59.99</li>
+                            </ul>
+                        </div>
+                        <button class="btn order-btn" data-service="YouTube Premium">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Amazon Prime -->
+                <div class="service-card">
+                    <div class="service-img" style="background: linear-gradient(45deg, #00A8E1, #007EB9);">
+                        <i class="fab fa-amazon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Amazon Prime</h3>
+                        <p>Access to Prime Video, free shipping, and more with Amazon Prime.</p>
+                        <div class="pricing">
+                            <h4>Packages:</h4>
+                            <ul>
+                                <li data-price="7.99">1 Month - $7.99</li>
+                                <li data-price="21.99">3 Months - $21.99</li>
+                                <li data-price="39.99">6 Months - $39.99</li>
+                                <li data-price="69.99">1 Year - $69.99</li>
+                            </ul>
+                        </div>
+                        <button class="btn order-btn" data-service="Amazon Prime">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="how-to-order" id="how-to-order">
+                <h3>How to Order</h3>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <p>Select the service and package you want</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <p>Contact me via WhatsApp or the contact form</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <p>Make payment and receive your service instantly</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-choose-us">
+                <h3>Why Choose Us?</h3>
+                <div class="features-container">
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <p>Instant Delivery</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>100% Secure</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <p>24/7 Support</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p>Best Prices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p class="subtitle">Get in touch for any questions or orders</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 437 673 3667</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>contact@business.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="info-content">
+                            <h4>WhatsApp</h4>
+                            <p>+1 437 673 3667</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We provide premium digital services with instant delivery and 24/7 customer support.</p>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-to-order">How to Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 437 673 3667</p>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@business.com</p>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>+1 437 673 3667</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Business Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Order</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal">Total: $0.00</div>
+            <a href="#" class="whatsapp-btn" id="whatsappOrderBtn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Complete Order on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Floating back button (always visible) -->
+    <a href="index.html" class="floating-back-button">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script src="business.js"></script>
+</body>
+</html>
